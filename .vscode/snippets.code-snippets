@@ -20,7 +20,7 @@
 		"prefix": "sld",
 		"body": [
 			"<div class='slide md'>",
-				"$0", 
+				"$1$0", 
 		 	"</div>",
 				 ],
 		"description": "bare template of markdown slide"
@@ -30,7 +30,7 @@
 		"prefix": "isld",
 		"body": [
 			"<div class='slide md'>",
-				"($0)[]", 
+				"$1($0)[]", 
 		 	"</div>",
 				 ],
 		"description": "bare template of markdown slide with image"
@@ -41,7 +41,7 @@
 		"body": [
 			"<span class='notes'>",
 			"<p>",
-			"$0",
+			"$1$0",
 			"</p>",
 			"</span>"			
 				 ],

@@ -4,19 +4,15 @@ slide = 0;
 
 $(document).ready( 
     function() {
-		slides = $('.slide');
-		var hash = window.location.hash || "#0";
-		var num = parseInt(hash.replace('#',''));
-		show(num);
-		 $('.slide').click(function () {
-			var deltaX = event.offsetX / document.width;
-			move(deltaX < 0.3 ? -1 : 1);
-			//if (deltaX <= -2) move(-1);
-			//if (deltaX >= 2)  move( 1);
-			//console.info("%s / %s == %s", event.offsetX, document.width, deltaX);
-		});
+      slides = $('.slide');
+      var hash = window.location.hash || "#0";
+      var num = parseInt(hash.replace('#',''));
+      show(num);
+      $('.slide').click(function () {
+        var deltaX = event.offsetX / document.width;
+        move(deltaX < 0.3 ? -1 : 1);
+      });
 });
-	
 
 function hide(num) {
   slides[num].style.display = "none";
@@ -25,14 +21,14 @@ function hide(num) {
 var notesVisible = false;
 
 function showNotes() {
- notesVisible = !notesVisible;
- var notes = $(slides[slide]).children('.notes').html();
- $('#noteDetail').html(notes);
- if (notesVisible) {
-   $('#noteDetail').show();
- } else {
-   $('#noteDetail').hide();
- }
+  notesVisible = !notesVisible;
+  var notes = $(slides[slide]).children('.notes').html();
+  $('#noteDetail').html(notes);
+  if (notesVisible) { 
+    $('#noteDetail').show();
+  } else {
+    $('#noteDetail').hide();
+  }
 }
 
 function show(num) {
@@ -73,7 +69,7 @@ function show(num) {
       $('#speaker').html('');
   }
   
-  if ($(slides[num]).hasClass('md')) {
+  if ($(slides[num]).hasClass('md')) {    
     $(slides[num]).children('.notes').remove();
     var slideContent = ($(slides[num]).html()).htmlDecode();
     var reader = new commonmark.Parser();
@@ -95,7 +91,6 @@ function move(n) {
     slide = 0;
   }
   if (slide < 0) {
-    //time to wrappy round back to the start.
     slide = slides.length - 1;
   }
   show(slide);
