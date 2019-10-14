@@ -11,67 +11,66 @@
    <link rel="stylesheet" type="text/css" href="higgins.css">
 </head>
 <body>
-      <div id='noteDetail'></div>
-      <div id='notes' onclick='showNotes();'>n</div>
-      <div id='num'>#0</div>
+   <div id='noteDetail'></div>
+   <div id='notes' onclick='showNotes();'>n</div>
+   <div id='num'>#0</div>
    
-      <div class='container'>    
-         <div class='slide md'>
-# Git Training 
-         </div>
-   
-         <div class='slide'>
+   <div class='container'>    
+      <div class='slide'>
+         <h1>Entendendo o Git</h1>
+         <h3>Sérgio Giraldo</h3>
+         <h4>Out-2019</h4>
+         <br/>
+         <br/>
+         <br/>
+         <br/>
+         <br/>
+         <font size='3'>made with ♥ using Higgins</font>
+      </div>   
+      <div class='slide'>
             <b>O Git guarda arquivos para nós!</b>
             <img src="image/mindblown.jpg" alt="Mind blown" align="center" /> 
-         </div>
-   
-         <div class='slide md'>
+      </div>
+      <div class='slide md'>
 ![](image/remotes-ptbr.png)
 **from git-it**
-         </div>
-   
-         <div class='slide md'>
+      </div>
+      <div class='slide md'>
 ![](image/legenda.JPG)    
-         </div>
-   
-         <div class='slide md'>
+      </div>
+      <div class='slide md'>
 ![](image/folder01.JPG)
 ![](image/passo01.JPG)
-         </div>
-   
-         <div class='slide md'>
+      </div>
+      <div class='slide md'>
 ## git add .
    
 Sinaliza que há mudanças, nada mudou ainda.
    
 ![](image/passo01.JPG)
-         </div>
-   
-         <div class='slide md'>
+      </div>
+      <div class='slide md'>
 ## git commit -m "first version"
    
 Está no local, não está no remoto.
    
 ![](image/passo02.JPG)
-         </div>
-            
-         <div class='slide md'>
+      </div>
+      <div class='slide md'>
 ## git push
    
 Está no local e no remoto.
    
 ![](image/passo03.JPG)
-         </div>
-   
-         <div class='slide md'>
+      </div>
+      <div class='slide md'>
 Seu colega não sabe que você já trabalhou os arquivos 1 e 2 ...
 
 Não está no local e está no remoto.
             
 ![](image/passo03A.JPG)
-         </div>
-   
-         <div class='slide md'>
+      </div>
+      <div class='slide md'>
 ## git pull
             
 Está no local e no remoto.
@@ -79,27 +78,23 @@ Está no local e no remoto.
 Agora ele sabe :)
             
 ![](image/passo04.JPG)
-         </div>
-   
-         <div class='slide md'>
+      </div>
+      <div class='slide md'>
 ## git add File1.txt
 ## git commit -m "New feat"
 ## git push
             
 ![](image/passo05.JPG)
-         </div>
-            
-         <div class='slide'>
-            <b>Branches são apenas referências!</b>
-            <img src="image/mindblown.jpg" alt="Mind blown" align="center" /> 
-         </div>
-
-         <div class='slide md'>
+      </div>
+      <div class='slide'>
+         <b>Branches são apenas referências!</b>
+         <img src="image/mindblown.jpg" alt="Mind blown" align="center" /> 
+      </div>
+      <div class='slide md'>
 ![](image/passo06.JPG)
 
 Vou criar uma branch!
-         </div>         
-      </div>
+      </div>         
       <div class='slide md'>
 ## git checkout -b "Cool"
 ![](image/passo07.JPG)
@@ -148,29 +143,110 @@ Vou criar uma branch!
          <code>merge</code><br/>
       </div>      
       <div class='slide md'>
-# Receitas
+# Hands On
 
-* criar um repositório, clonar e criar primeiro arquivo
+* criar um repositório, clonar e criar primeiro arquivo;
 
-* criar uma branch e ver a diferença entre as branches
+* criar uma branch e ver a diferença entre as branches;
 
 * que eu fiz ultimamente?
 
 * que eu mudei neste arquivo?
+
+* mudar um ou mais arquivos e voltar para a versão original;
+
+   * e se já fiz commit? 
+   
+   * commit e push?
+      </div>
+      <div class='slide md'>
+# Hands On
+
+* stash
+
+* fazer merge com tudo certo
+         
+* fazer merge com conflitos
+         
+* cherry pick
+         
+* ninja na linha de comando
+      </div>
+      <div class='slide md'>
+# Receitas
+
+* criar um repositório, clonar e criar primeiro arquivo
+      </div>
+      <div class='slide md'>
+# Receitas
+
+* criar uma branch e ver a diferença entre as branches
+      </div>
+      <div class='slide md'>
+# Receitas
+
+* que eu fiz ultimamente?
+      </div>
+      <div class='slide md'>
+# Receitas
+
+* que eu mudei neste arquivo?
+      </div>
+      <div class='slide md'>
+# Receitas
 
 * mudar um ou mais arquivos e voltar para a versão original
 
    * e se já fiz commit? commit e push?
 
    * stash      
+      </div>
+      <div class='slide md'>
+# Receitas
 
 * fazer merge com tudo certo
+      </div>
+      <div class='slide md'>
+# Receitas
 
 * fazer merge com conflitos
+      </div>
+      <div class='slide md'>
+# Receitas
 
 * cherry pick
+      </div>
+      <div class='slide md'>
+# Receitas
 
 * ninja na linha de comando
       </div>
+      <div class='slide'>
+         <h1>Resumo final</h1> 
+         <code>add</code><br/>
+         <code>commit</code><br/>
+         <code>push</code><br/>
+         <code>pull</code><br/>
+         <code>branch</code><br/>
+         <code>checkout</code><br/>
+         <code>clone</code><br/>
+         <code>merge</code><br/>
+         <code>ls</code><br/>
+         <code>status</code><br/>
+         <code>diff</code><br/>
+      </div>         
+      <div class='slide'>
+         <h3>Referências</h3> 
+         <br/>
+         1.
+            <a href="https://git-scm.com/doc" target="_blank">https://git-scm.com/doc</a> 
+         <br/><br/>
+         2.
+            <a href="https://github.com/k88hudson/git-flight-rules" target="_blank">https://github.com/k88hudson/git-flight-rules</a> 
+         <br/><br/>
+         3.
+            <a href="https://stackoverflow.com/questions/tagged/git" target="_blank">https://stackoverflow.com/questions/tagged/git</a> 
+      </div>
+   </div>                        
 </body>
 </html>
