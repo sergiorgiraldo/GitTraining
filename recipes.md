@@ -1,15 +1,23 @@
-1. https://github.com/new
+1. Crie um repositório 'tst1' com um readme
+    
+    https://github.com/new
     https://github.com/sergiorgiraldo/tst1.git
 
-2. git clone https://github.com/sergiorgiraldo/tst1.git
+2. Copie para sua máquina
 
-3. echo foo > foo
+    git clone https://github.com/sergiorgiraldo/tst1.git
 
-    git add foo
+3. Crie um arquivo foo.txt
+
+    echo foo.txt > foo.txt
+
+    git add foo.txt
 
     git commit -m "my first file"
 
     git push
+
+    Crie outros arquivos e adicione
 
 4. git branch --all
 
@@ -26,6 +34,12 @@
     git log
 
     git log --all
+
+    git log --all --oneline --abbrev-commit --graph
+
+    git log --all --oneline --abbrev-commit --graph --decorate
+
+    git log --all --oneline --abbrev-commit --graph  --decorate --color
 
     git show <commit id>
 
@@ -72,3 +86,50 @@
     git stash apply
 
     git stash save "not bold enough"
+
+10. git checkout newstuff
+
+    notepad readme.md, adicione uma linha nova 'new line'
+
+    git add, commit, push origin newstuff
+
+    git checkout master
+
+    git merge newstuff
+
+    veja o arquivo readme.md com a linha nova
+
+    git push origin master
+
+    git log
+
+11. git checkout master
+
+    notepad readme.md, troque 'linha nova' por 'ideia nova'
+
+    git add, commit, push origin master
+
+    git checkout newstuff
+
+    notepad readme.md, troque 'linha nova' por 'fatia nova'
+
+    git add, commit, push origin newstuff
+
+    git checkout master
+
+    git merge newstuff
+
+    para ver os conflitos: git diff --name-only --diff-filter=U
+
+    notepad readme.md, decida qual o certo
+
+    git add, commit, push
+
+12. aliases (.gitconfig)
+
+    powershell g, gg ($PROFILE)
+
+    signing commits
+
+    ctrl r
+
