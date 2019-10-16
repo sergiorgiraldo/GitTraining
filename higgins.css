@@ -5,7 +5,8 @@ html,body {
 	text-align:center; 
 	font-size:32pt;
 	color:#222;
-	height:100%;
+    height:100%;
+    background-color: #fff;
 }
 a,a:visited,a:hover,a {
     color:dodgerblue;
@@ -31,13 +32,38 @@ code{
 }
 
 blockquote {
-    background-color: rgba(60,60,60,0.5);
-    padding: 0em 1em 0.2em 40px;
-    margin-top:20px;
-    border-top:3px solid rgba(238,238,238,0.5);
-    border-bottom:3px solid rgba(238,238,238,0.5);
-    color:#FFF;
+    display: block;
+    border-width: 2px 0;
+    border-style: solid;
+    border-color: #eee;
+    padding: 1.5em 0 0.5em;
+    margin: 1.5em 0 0 0 ;
+    position: relative;
+    width: 60%;
+    margin-left: 15%;
+    font-weight: bold;
+  }
+  blockquote:before {
+    content: '\201C';
+    position: absolute;
+    top: 0em;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    width: 2rem;
+    height: 1rem;
+    font: 4em/1.08em 'PT Sans', sans-serif;
+    color: #666;
+    text-align: center;
+  }
+  blockquote:after {
+    content: "\2013 \2003" attr(cite);
+    display: block;
+    text-align: right;
+    font-size: 0.6em;
+    color: #e74c3c;
 }
+
 .bord { 
     border: 1px solid #888; 
 }
