@@ -65,11 +65,15 @@
 
     git add baz.txt, git commit -m "i will regret this", git push
 
-    git revert 658e438
+    git revert 658e438 
+    
+    git status
+    
+    git push
 
     **ou**
 
-    git reset --hard HEAD^
+    git reset --hard HEAD^ | git reset --hard HEAD~ | git reset --hard 658e438
 
     git push -f
 
