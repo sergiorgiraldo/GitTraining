@@ -76,6 +76,26 @@
     git reset --hard HEAD^ | git reset --hard HEAD~ | git reset --hard 658e438
 
     git push -f
+    
+    ---
+    
+    to see everyhing
+    
+    git reflog show head
+    
+    git reflog show master
+    
+    ---
+    
+    to remove stuff **added** and not committed
+    
+    git reset
+    
+    ---
+    
+    to remove stuff **not added** (it will delete!)
+    
+    git clean -f
 
 9. notepad baz.txt
 
