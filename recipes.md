@@ -149,7 +149,19 @@
 
     git add, commit, push
 
-12. aliases (.gitconfig)
+12. git log --format="%H" foo.txt
+
+    git blame foo.txt
+
+    git show 057921c
+
+    git show 057921c08ca3ac126df9a5fa921dc54767db1a55:foo.txt
+
+    git show f759cf8197e2c9ef62bdde8371975d78e2a54d39:foo.txt
+
+    git diff f759cf:foo.txt 057921:foo.txt
+
+13. aliases (.gitconfig)
 
     powershell g, gg ($PROFILE)
 
