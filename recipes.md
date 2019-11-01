@@ -9,7 +9,7 @@
 
 3. Crie um arquivo foo.txt
 
-    echo foo.txt > foo.txt
+    echo foo.txt > foo.txt | notepad foo.txt
 
     git add foo.txt
 
