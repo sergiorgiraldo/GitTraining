@@ -9,7 +9,7 @@
 
 3. Crie um arquivo foo.txt
 
-    echo foo.txt > foo.txt
+    echo foo.txt > foo.txt | notepad foo.txt
 
     git add foo.txt
 
@@ -65,13 +65,37 @@
 
     git add baz.txt, git commit -m "i will regret this", git push
 
-    git revert 658e438
+    git revert 658e438 
+    
+    git status
+    
+    git push
 
     **ou**
 
-    git reset --hard HEAD^
+    git reset --hard HEAD^ | git reset --hard HEAD~ | git reset --hard 658e438
 
     git push -f
+    
+    ---
+    
+    to see everyhing
+    
+    git reflog show head
+    
+    git reflog show master
+    
+    ---
+    
+    to remove stuff **added** and not committed
+    
+    git reset
+    
+    ---
+    
+    to remove stuff **not added** (it will delete!)
+    
+    git clean -f
 
 9. notepad baz.txt
 
@@ -125,17 +149,28 @@
 
     git add, commit, push
 
-12. git clone <url do repositório>
+12. git log --format="%H" foo.txt
+
+    git blame foo.txt
+
+    git show 057921c
+
+    git show 057921c08ca3ac126df9a5fa921dc54767db1a55:foo.txt
+
+    git show f759cf8197e2c9ef62bdde8371975d78e2a54d39:foo.txt
+
+    git diff f759cf:foo.txt 057921:foo.txt
+
+13. git clone <url do repositório>
 
 	git fetch --all (isto traz todos os metadados do remote localmente, se há novas branches este comando trará as referencias)
 
 	git pull (traz os arquivos localmente)	
 
-13. aliases (.gitconfig)
+14. aliases (.gitconfig)
 
     powershell g, gg ($PROFILE)
 
     signing commits
 
     ctrl r
-
