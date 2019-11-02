@@ -125,7 +125,13 @@
 
     git add, commit, push
 
-12. aliases (.gitconfig)
+12. git clone <url do repositório>
+
+	git fetch --all (isto traz todos os metadados do remote localmente, se há novas branches este comando trará as referencias)
+
+	git pull (traz os arquivos localmente)	
+
+13. aliases (.gitconfig)
 
     powershell g, gg ($PROFILE)
 
