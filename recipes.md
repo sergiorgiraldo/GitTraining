@@ -161,11 +161,16 @@
 
     git diff f759cf:foo.txt 057921:foo.txt
 
-13. aliases (.gitconfig)
+13. git clone <url do repositório>
+
+	git fetch --all (isto traz todos os metadados do remote localmente, se há novas branches este comando trará as referencias)
+
+	git pull (traz os arquivos localmente)	
+
+14. aliases (.gitconfig)
 
     powershell g, gg ($PROFILE)
 
     signing commits
 
     ctrl r
-
