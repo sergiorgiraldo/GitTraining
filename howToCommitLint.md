@@ -15,5 +15,14 @@
 			}
 		}
 5.
+	notepad.gitignore
+		# Logs
+		logs
+
+		# Dependency directories
+		node_modules/
+	
+6.
 	git add.
 	npm run commit
+	
