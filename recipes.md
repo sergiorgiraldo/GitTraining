@@ -1,11 +1,20 @@
-1. Crie um repositório 'tst1' com um readme
+1. Crie um repositório publico 'tst1' com um readme
     
-    https://github.com/new
-    https://github.com/sergiorgiraldo/tst1.git
+    Vá ao site do github pela url  
+      https://github.com/new
+    
+    (se voce nao tem uma conta lá, crie! eh gratis!)
+
+    - Use o nome *tst1*
+
+    - Lembre-se de assinalar o checkbox 'Add a README file'
 
 2. Copie para sua máquina
 
-    git clone https://github.com/sergiorgiraldo/tst1.git
+    git clone https://github.com/<seu_usuario>/tst1.git
+
+    Para mim: 
+      https://github.com/sergiorgiraldo/tst1.git
 
 3. Crie um arquivo foo.txt
 
